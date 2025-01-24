@@ -27,6 +27,7 @@
 # Build files
 bin/
 obj/
+artifacts/
 
 # Other
 *.log
