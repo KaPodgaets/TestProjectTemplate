@@ -21,9 +21,14 @@
     <EnableStyleCopAnalizer>true</EnableStyleCopAnalizer>
   </PropertyGroup>
 
+  <!-- Package management -->
   <ItemGroup>
     <!-- Common analyzer rules -->
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="10.5.0.109200">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
