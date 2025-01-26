@@ -2,6 +2,8 @@ namespace ProjectTemplate;
 
 public class WeatherForecast
 {
+    public const int MAX_VALUE = 255;
+
     public DateOnly Date { get; set; }
 
     public int TemperatureC { get; init; }

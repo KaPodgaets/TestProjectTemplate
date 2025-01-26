@@ -3,7 +3,7 @@ namespace ProjectTemplate.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
 /// <summary>
-/// csdfgsdfg.
+/// test.
 /// </summary>
 [ApiController]
 [Route("[controller]")]
@@ -24,6 +24,7 @@ public class WeatherForecastController : ControllerBase
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
+        _logger.LogInformation("GetWeatherForecast");
         return Enumerable.Range(1, 5).Select(
                 index => new WeatherForecast
                 {
